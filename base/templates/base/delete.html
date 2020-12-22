@@ -1,0 +1,15 @@
+{% extends 'base/main.html' %}
+{% load static %}
+
+{% block content %}
+&nbsp;
+&nbsp;
+<div class="section-title" style="text-align: center; margin-top: 60px;" >
+    <form action= "" method="POST">
+        {% csrf_token%}
+        <p> Are you sure want to delete {{item}} ?</p>
+        <input class="btn btn-danger" type="submit" value="Confirm">
+        </form>
+</div>
+
+{% endblock content %}

@@ -1,0 +1,284 @@
+{% extends 'base/main.html'%}
+
+{% load static %}
+{% include 'base/navbar.html' %}
+{% block content %}
+
+    <!--Carousel Wrapper-->
+    <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
+
+        <!--Indicators-->
+        <ol class="carousel-indicators">
+        <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+        <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+        </ol>
+        <!--/.Indicators-->
+    
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+    
+        <!--First slide-->
+        <div class="carousel-item active">
+            <div class="view" style="background-image: url({% static 'img/bg.jpg' %}); background-repeat: no-repeat; background-size: cover;">
+    
+            <!-- Mask & flexbox options-->
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+    
+                <!-- Content -->
+                <div class="text-center white-text mx-5 wow fadeIn">
+                <h1 class="mb-4" style="font-family: 'Permanent Marker', cursive; font-size: 60px;">
+                    <strong>Hi!, Im Tasa Fachri Oktasar</strong>
+                </h1>
+    
+                <p>
+                    <strong style="font-family: 'Lobster', cursive; font-size: 24px;">Generalist Human Resources</strong>
+                </p>
+    
+                </div>
+                <!-- Content -->
+    
+            </div>
+            <!-- Mask & flexbox options-->
+    
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/94.jpg'); background-repeat: no-repeat; background-size: cover;">
+    
+            <!-- Mask & flexbox options-->
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+    
+                <!-- Content -->
+                <div class="text-center white-text mx-5 wow fadeIn">
+                <p class="mb-4 d-none d-md-block" style="font-family: 'Lobster', cursive; font-size: 40px;">
+                    <strong>And, welcome to my homepage, 
+                        <br>so I have to say something about myself. 
+                        <br>Sometimes it is hard to introduce yourself because you know yourself,
+                        <br>so well that you do not know where to start with.
+                        <br>Let me give a try to see what kind of image you have about me through my self-description. 
+                        <br>I hope that my impression about myself and your impression about me are not so different. Here it goes.</strong>
+                </p>
+                </div>
+            </div>
+            </div>
+        </div>
+    
+        <div class="carousel-item">
+            <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/92.jpg'); background-repeat: no-repeat; background-size: cover;">
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+                <div class="text-center white-text mx-5 wow fadeIn">
+                <p class="mb-4 d-none d-md-block" style="font-family: 'Lobster', cursive;font-size: 40px;">
+                    <strong>Hope u like it! </strong>
+                </p>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+        <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <main>
+        <div class="container">
+    
+       <!--Section: Main info-->
+    
+        <hr class="my-5">
+    
+        <!--Section: Main features & Quick Start-->
+        <section>
+            
+            <h3 class="h3 text-center mb-5">What I'm currently doing ?</h3>
+    
+            <!--Grid row-->
+            <div class="row wow fadeIn">
+    
+            <!--Grid column-->
+            <div class="col-lg-6 col-md-12 px-4">
+    
+                <!--First row-->
+                <div class="row">
+                <div class="col-1 mr-3">
+                    <i class="fas fa-check-double fa-2x cyan-text" aria-hidden="true"></i>
+                </div>
+                <div class="col-10">
+                    <h5 class="feature-title">Passionate about </h5>
+                    <p class="grey-text" style="text-align: justify;">In terms of the work, im working past eight years as Human Resources Staff, IT Staff also Project Staff, but i found interest as developer, and right now im focusing on Python, Django + React</p>
+                    <br>
+                    <p style="color: rgb(138, 136, 136); text-align: justify;">The world is changing rapidly, and I don’t have enough professional experience as Python / Django Programming Language nor Data Scientis. However, I know that I can provide a fresh take and an extraordinary approach to every project</p>
+                    <a href="#">more about my resume</a>
+                </div>
+                </div>
+                <!--/First row-->
+    
+                <div style="height:30px"></div>
+    
+
+    
+                <div style="height:30px"></div>
+ 
+            </div>
+            <!--/Grid column-->
+    
+            <!--Grid column-->
+            <div class="col-lg-6 col-md-12">
+    
+                <p class="h5 text-center mb-4">My Youtube Channel</p>
+                <div id="ytplayer" class="embed-responsive embed-responsive-16by9">
+                <iframe  class="embed-responsive-item" src="https://www.youtube.com/channel/UCAB-ZfiZIZ-z0bqXAYQ2Fbw" frambeborder=0 allowfullscreen></iframe>
+                </div>
+            </div>
+            <!--/Grid column-->
+    
+            </div>
+            <!--/Grid row-->
+    
+        </section>
+        <!--Section: Main features & Quick Start-->
+
+        <hr class="mb5">
+        <div class="container mt-5">
+
+
+            <!--Section: Content-->
+            <section class="text-center">
+            
+              <!-- Section heading -->
+              <h3 class="font-weight-bold mb-5">Featured Blog Posts</h3>
+                
+                <!-- Grid row -->
+              <div class="row">
+
+                {% for post in posts %}  
+                <!-- Grid column -->
+                <div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
+                  
+                  <!-- Card -->
+                  <div class="card hoverable">
+                    
+                    <!-- Card image -->
+                    <img class="card-img-top" src="{{post.thumbnail.url}}">
+          
+                    <!-- Card content -->
+                    <div class="card-body">
+          
+                      <!-- Title -->
+                      <p class="card-title text-muted text-uppercase font-small mt-1 mb-3"><strong>{{post.headline}}</strong></p>
+                      <!-- Text -->
+                      <p class="mb-2" style="text-align: justify;">{{post.sub_headline}}</p>
+                      <hr>
+                      <a href="{% url 'post' post.slug %}">Read More</a>
+          
+                    </div>
+
+          
+                  </div>
+                  
+                  <!-- Card -->
+
+                  
+                </div>
+                {% endfor %}  
+ 
+                
+              </div>
+              <!-- Grid row -->
+              <br>
+              <p><a href="{% url 'posts' %}">View More</a></p>
+      
+            </section>
+            <!--Section: Content-->
+          
+          
+        </div>
+        
+    
+        <hr class="mb-5">
+    
+    <section class="px-md-5 mx-md-5 text-center text-lg-left dark-grey-text">
+
+        <form id="contact-form" method="POST" action="{% url 'send_email' %}"> 
+            <div class="row">
+                <div class="col-lg-5 col-md-12 mb-0 mb-md-0">
+                  <h3 class="font-weight-bold">Need More Info ?</h3>
+                  <p class="text-muted" style="text-align: justify;">With any other inquiries into the matter at hand, I offer you my utmost sincerity to provide service should you require further assistance at any later point in time which is not necessarily right at this moment during the immediate conversation that we are engaging in currently.</p>
+                  <p><span class="font-weight-bold mr-2">Email:</span><a href="">tazsafakhri@gmail.com</a></p>
+                  <p><span class="font-weight-bold mr-2">Phone:</span><a href="">+62 81 8086 2017</a></p>
+                </div>
+                {% csrf_token%}
+                <div class="col-lg-7 col-md-12 mb-4 mb-md-0">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="md-form md-outline mb-0">
+                        <input type="text" id="form-first-name" class="form-control" name="Firstname">
+                        <label for="form-first-name" >First name</label>
+                      </div>
+        
+                    </div>
+                    <div class="col-md-6">
+                      <div class="md-form md-outline mb-0">
+                        <input type="text" id="form-last-name" class="form-control" name="Lastname">
+                        <label for="form-last-name">Last name</label>
+                      </div>
+        
+                    </div>
+                  </div>
+                  <div class="md-form md-outline mt-3">
+                    <input type="email" id="form-email" class="form-control" name="email">
+                    <label for="form-email">E-mail</label>
+                  </div>
+                  <div class="md-form md-outline">
+                    <input type="text" id="form-subject" class="form-control" name="subject">
+                    <label for="form-subject">Subject</label>
+                  </div>
+                  <div class="md-form md-outline mb-3">
+                    <textarea id="form-message" class="md-textarea form-control" rows="3" name="message"></textarea>
+                    <label for="form-message">How i can help?</label>
+                  </div>
+                  <button type="submit" class="btn btn-info btn-sm ml-0">Submit<i class="far fa-paper-plane ml-2"></i></button>
+                </div>
+              </div>
+        </form>
+        
+  
+    </section>
+    
+        </div>
+    </main>
+    <!--Main layout-->
+    
+    
+        <script>
+            // Load the IFrame Player API code asynchronously.
+            var tag = document.createElement('script');
+            tag.src = "https://www.youtube.com/player_api";
+            var firstScriptTag = document.getElementsByTagName('script')[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+          
+            // Replace the 'ytplayer' element with an <iframe> and
+            // YouTube player after the API code downloads.
+            var player;
+            function onYouTubePlayerAPIReady() {
+              player = new YT.Player('ytplayer', {
+                height: '360',
+                width: '640',
+                videoId: 'IzabzadpROQ'
+              });0
+            }
+        </script>
+
+    
+    </footer>
+    <!--/.Footer-->
+    {% endblock content %}
+
+
+

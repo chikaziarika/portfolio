@@ -1,0 +1,390 @@
+{% extends 'base/main.html'%}
+{% load static %}
+{% include 'base/navbar.html' %}
+{% block content %}
+&nbsp;
+&nbsp;
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+<style>
+  .interests .icon-box {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.08);
+    transition: ease-in-out 0.3s;
+}
+  
+  .interests .icon-box i {
+    font-size: 32px;
+    padding-right: 10px;
+    line-height: 1;
+}
+  
+  .interests .icon-box h3 {
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-size: 16px;
+    color: #fff;
+}
+  
+  .interests .icon-box:hover {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.section-title h2 {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  line-height: 1px;
+  margin: 0 0 20px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #aaaaaa;
+  font-family: "Poppins", sans-serif;
+}
+
+.section-title h2::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: #4ceb95;
+  margin: 4px 10px;
+}
+
+.section-title p {
+  margin: 0;
+  margin: -15px 0 15px 0;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+</style>
+
+
+<main>    
+    <div class="container">
+      <section class="mt-5 wow fadeIn">
+        <div class="row">
+          <div class="col-lg-4">
+            <img src="{% static 'img/pg.png' %}" class="img-fluid z-depth-1-half rounded" style="height: 410px; margin-top: 50px; "
+              alt="">
+          </div>
+        <div class="col-md-8 mb-4">
+          <div class="section-title">
+          <!-- Main heading -->
+          <h1 style="font-family: 'Dancing Script', cursive; font-size: 24px;">The little Things</h1>
+          <p style="font-size: 72px; margin-top: -30px; font-family: 'Luckiest Guy', cursive; color: #fff;"> About Me </p>
+          <!-- Main heading -->
+
+          </div>
+ 
+          <p style="text-align: justify; margin-top: -20px;" ><strong style="color: #fff;" >Hi!, Im a Python & Django Programmer (Junior) From GARUT! Hooray~</strong>  </p>
+          <div class="row">
+            <div class="col-lg-6">
+              <ul style="list-style: none; color: #fff; ">
+                <li><i class="fas fa-chevron-right green-text" ></i> <strong style="color: #fff;">Birthday:</strong > 29 October 1987</li>
+                <li><i class="fas fa-chevron-right green-text" ></i> <strong style="color: #fff;">Website:</strong> chikaziarika.heroku.app </li>
+                <li><i class="fas fa-chevron-right green-text" ></i> <strong style="color: #fff;">Phone:</strong> +6281 8086 2017</li>
+                <li><i class="fas fa-chevron-right green-text" ></i> <strong style="color: #fff;">City:</strong> City : Garut, ID</li>
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <ul style="list-style: none; color: #fff;">
+                <li><i class="fas fa-chevron-right green-text" ></i> <strong style="color: #fff;">Age:</strong> 33</li>
+                <li><i class="fas fa-chevron-right green-text" ></i> <strong style="color: #fff;">Degree:</strong> Bachelor Deegre  </li>
+                <li><i class="fas fa-chevron-right green-text" ></i> <strong style="color: #fff;">Email:</strong> tazsafakhri@gmail.com</li>
+                <li><i class="fas fa-chevron-right green-text" ></i> <strong style="color: #fff;">Freelance:</strong> Available</li>
+              </ul>
+            </div>
+
+          </div>
+          <p style="font-style: italic; text-align: justify; color: #fff;">
+            I have been working as a Operational and Admin Project Management Consultant for the last eight years and cooperated with several startups. I cannot say with 100% confidence where I see myself in five years or what my big career goal is. The world is changing rapidly, and I don’t have enough professional experience as Python / Django Programming Language nor Data Scientis. However, I know that I can provide a fresh take and an extraordinary approach to every project. I am always open to challenges and constructive feedback. I am open-minded and learn new things quickly. I want to become a team player and dedicate all my skills and talents to develop high-quality and unique products.
+          </p>
+
+        </div>
+          
+      </div>  
+      <hr>
+      </section>
+
+      <div class="interests container">
+        <div class="row">
+          
+      </div>
+      <!--Section: Main features & Quick Start-->
+      <section>
+
+          <div class="section-title">
+            <h2>Interests</h2>
+          </div>
+    
+          <div class="row">
+            <div class="col-lg-3 col-md-4">
+              <div class="icon-box">
+                <i class="ri-store-line" style="color: #ffbb2c;"></i>
+                <h3>Browsing Internet</h3>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+              <div class="icon-box">
+                <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
+                <h3>Django</h3>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+              <div class="icon-box">
+                <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
+                <h3>Python</h3>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+              <div class="icon-box">
+                <i class="ri-image-line" style="color: #e361ff;"></i>
+                <h3>Adobe Illustrator</h3>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4">
+              <div class="icon-box">
+                <i class="ri-image-line" style="color: #47aeff;"></i>
+                <h3>Adobe Photoshop</h3>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4">
+              <div class="icon-box">
+                <i class="ri-reactjs-line" style="color: #ffa76e;"></i>
+                <h3>React</h3>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4">
+              <div class="icon-box">
+                <i class="ri-code-s-slash-line" style="color: #11dbcf;"></i>
+                <h3>Bootstrap 4 & 5</h3>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4">
+              <div class="icon-box">
+                <i class="ri-html5-line" style="color: #4233ff;"></i>
+                <h3>HTML</h3>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4">
+              <div class="icon-box">
+                <i class="ri-code-s-slash-line" style="color: #b2904f;"></i>
+                <h3>Javascript</h3>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4">
+              <div class="icon-box">
+                <i class="ri-amazon-fill" style="color: #b20969;"></i>
+                <h3>AWS (RDS/S3)</h3>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4">
+              <div class="icon-box">
+                <i class="ri-database-2-line" style="color: #ff5828;"></i>
+                <h3>Postgres</h3>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4">
+              <div class="icon-box">
+                <i class="ri-fingerprint-line" style="color: #29cc61;"></i>
+                <h3>Heroku</h3>
+            </div>
+        </div>
+      </section>
+
+      <hr class="mb-5">
+      <div class="section-title">
+        <h2>Interests</h2>
+      </div>
+      <div class="row features-small mb-5 mt-3 wow fadeIn ">
+        <div class="col-md-4 mt-2">
+          <!--First row-->
+          <div class="row">
+            <div class="col-2">
+              <i class="fab fa-html5 fa-2x green-text"></i>
+            </div>
+            <div class="col-10">
+              <h6 class="feature-title">HTML</h6>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
+              </div>
+              <div style="height:20px"></div>
+            </div>
+          </div>
+          <!--/First row-->
+
+          <!--Second row-->
+          <div class="row">
+            <div class="col-2">
+              <i class="fab fa-css3 fa-2x green-text"></i>
+            </div>
+            <div class="col-10">
+              <h6 class="feature-title">CSS</h6>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+              </div>
+              <div style="height:20px"></div>
+            </div>
+          </div>
+          <!--/Second row-->
+
+          <!--Third row-->
+          <div class="row">
+            <div class="col-2">
+              <i class="fab fa-bootstrap fa-2x green-text"></i>
+            </div>
+            <div class="col-10">
+              <h6 class="feature-title">Bootstrap</h6>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+              </div>
+              <div style="height:20px"></div>
+            </div>
+          </div>
+          <!--/Third row-->
+
+          <!--Fourth row-->
+          <div class="row">
+            <div class="col-2">
+              <i class="fas fa-project-diagram fa-2x green-text"></i>
+            </div>
+            <div class="col-10">
+              <h6 class="feature-title">Django</h6>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+              </div>
+              <div style="height:20px"></div>
+            </div>
+          </div>
+          <!--/Fourth row-->
+        </div>
+        <!--/First column-->
+
+        <div class="col-md-4 mt-2">
+            <div class="row">
+                <div class="col-2">
+                  <i class="fab fa-python fa-2x green-text"></i></i>
+                </div>
+                <div class="col-10">
+                  <h6 class="feature-title">Python</h6>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+                  </div>
+                  <div style="height:20px"></div>
+                </div>
+            </div> 
+
+            <div class="row">
+                <div class="col-2">
+                  <i class="fas fa-file-image fa-2x pink-text"></i>
+                </div>
+                <div class="col-10">
+                  <h6 class="feature-title">Photoshop</h6>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
+                  </div>
+                  <div style="height:20px"></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-2">
+                  <i class="fas fa-icons fa-x cyan-text"></i>
+                </div>
+                <div class="col-10">
+                  <h6 class="feature-title">Illustrator</h6>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 85%"></div>
+                  </div>
+                  <div style="height:20px"></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-2">
+                  <i class="far fa-file-word fa-2x blue-text"></i>
+                </div>
+                <div class="col-10">
+                  <h6 class="feature-title">Microfsoft Word</h6>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+                  </div>
+                  <div style="height:20px"></div>
+                </div>
+            </div>
+                   
+        </div>
+ 
+        <div class="col-md-4 mt-2">
+          <div class="row">
+                <div class="col-2">
+                  <i class="fas fa-file-excel fa-2x green-text"></i>
+                </div>
+                <div class="col-10">
+                  <h6 class="feature-title">Microfsoft Excel</h6>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+                  </div>
+                  <div style="height:20px"></div>
+                </div>
+            </div> 
+
+            <div class="row">
+                <div class="col-2">
+                  <i class="fas fa-file-import fa-2x indigo-text"></i>
+                </div>
+                <div class="col-10">
+                  <h6 class="feature-title">Document Control</h6>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
+                  </div>
+                  <div style="height:20px"></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-2">
+                  <i class="fas fa-user fa-2x red-text"></i>
+                </div>
+                <div class="col-10">
+                  <h6 class="feature-title">Human Resources Generalist </h6>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 85%"></div>
+                  </div>
+                  <div style="height:20px"></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-2">
+                  <i class="fas fa-database fa-2x cyan-text"></i>
+                </div>
+                <div class="col-10">
+                  <h6 class="feature-title">Database (Postgresql)</h6>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                  </div>
+                  <div style="height:20px"></div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <!--/First row-->
+
+    </section>
+    <!--Section: Not enough-->
+  
+    </div>
+  
+      
+</main>
+{% endblock content %}

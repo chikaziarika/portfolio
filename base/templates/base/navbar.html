@@ -1,0 +1,61 @@
+{% load static%}
+
+<link href="{% static 'css/mdb.min.css' %}" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+	<div class="container">
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+		aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav nav-flex-icons" style="font-family: 'Righteous', cursive; font-size: 24px; position: absolute; left: 40%;">
+			<li class="nav-item">
+				<a class="nav-link" href="{% url 'index' %}">Home</a>
+			  </li>
+			<li class="nav-item">
+			  <a class="nav-link" href="{% url 'about' %}">About</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="{% url 'resume' %}">Resume</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="{% url 'portfolio' %}">Portfolio</a>
+			</li>
+		  </ul>
+	  </div>
+	</div>
+  </nav>
+
+
+<script>
+
+    "use strict";
+
+var indicator = document.querySelector('.nav-indicator');
+var items = document.querySelectorAll('.nav-item');
+
+function handleIndicator(el) {
+  items.forEach(function (item) {
+    item.classList.remove('is-active');
+    item.removeAttribute('style');
+  });
+  indicator.style.width = "".concat(el.offsetWidth, "px");
+  indicator.style.left = "".concat(el.offsetLeft, "px");
+  indicator.style.backgroundColor = el.getAttribute('active-color');
+  el.classList.add('is-active');
+  el.style.color = el.getAttribute('active-color');
+}
+
+items.forEach(function (item, index) {
+  item.addEventListener('click', function (e) {
+    handleIndicator(e.target);
+  });
+  item.classList.contains('is-active') && handleIndicator(item);
+});
+</script>
+<!-- Navbar -->

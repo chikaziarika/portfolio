@@ -1,0 +1,17 @@
+{% extends 'base/main.html' %}
+{% load static %}
+{% block content %}
+&nbsp;
+&nbsp;
+
+
+<div id="success-box" class="section-title" style="text-align: center; margin-top: 60px;" >
+    <img class="resize" src="{% static 'img/tenor.gif' %}">
+    <br>
+    <h1 style="font-family: 'Dancing Script', cursive; font-size: 24px; margin-top: 40px;"">Thanks For Reaching out!</h1>
+    <p style="font-size: 36px; margin-top: -10px; font-family: 'Luckiest Guy', cursive; color: #fff;"> Your Message was successfully sent. I will do my best to get back to you in timely manner </p>
+    <a id ="back-btn" href="{% url 'index' %}">BACK TO HOMEPAGE</a>
+
+</div>
+{% endblock %}
+

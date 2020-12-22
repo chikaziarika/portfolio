@@ -1,0 +1,156 @@
+{% extends 'base/main.html'%}
+
+{% include 'base/navbar.html' %}
+{% block content %}
+<div class="container z-depth-1 my-5 py-5 px-4 px-lg-0" style="margin-top: -20px;">
+
+    <!-- Section -->
+    <section>
+      
+      <style>
+        .timeline {
+          position: relative;
+          list-style: none;
+          padding: 1rem 0;
+          margin: 0;
+        }
+  
+        .timeline::before {
+          content: '';
+          position: absolute;
+          left: 50%;
+          top: 0;
+          bottom: 0;
+          width: 2px;
+          margin-left: -1px;
+          background-color: #50a1ff;
+        }
+  
+        .timeline-element {
+          position: relative;
+          width: 50%;
+          padding: 1rem 0;
+          padding-right: 2.5rem;
+          text-align: right;
+        }
+  
+        .timeline-element::before {
+          content: '';
+          position: absolute;
+          right: -8px;
+          top: 1.35rem;
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          border-radius: 50%;
+          border: 2px solid #50a1ff;
+          background-color: #fff;
+        }
+  
+        .timeline-element:nth-child(even)::before {
+          right: auto;
+          left: -8px;
+        }
+  
+        .timeline-element:nth-child(even) {
+          margin-left: 50%;
+          padding-left: 2.5rem;
+          padding-right: 0;
+          text-align: left;
+        }
+  
+        @media (max-width: 767.98px) {
+          .timeline::before {
+            left: 8px;
+          }
+        }
+  
+        @media (max-width: 767.98px) {
+          .timeline-element {
+            width: 100%;
+            text-align: left;
+            padding-left: 2.5rem;
+            padding-right: 0;
+          }
+        }
+  
+        @media (max-width: 767.98px) {
+          .timeline-element::before {
+            top: 1.25rem;
+            left: 1px;
+          }
+        }
+  
+        @media (max-width: 767.98px) {
+          .timeline-element:nth-child(even) {
+            margin-left: 0rem;
+          }
+        }
+  
+        @media (max-width: 767.98px) {
+          .timeline-element {
+            width: 100%;
+            text-align: left;
+            padding-left: 2.5rem;
+            padding-right: 0;
+          }
+        }
+  
+        @media (max-width: 767.98px) {
+          .timeline-element:nth-child(even)::before {
+            left: 1px;
+          }
+        }
+  
+        @media (max-width: 767.98px) {
+          .timeline-element::before {
+            top: 1.25rem;
+          }
+        }
+      </style>
+      
+      <div class="section-title" style="text-align: center;" >
+        <!-- Main heading -->
+        <h1 style="font-family: 'Dancing Script', cursive; font-size: 18px;">The little Things </h1>
+        <p style="font-size: 72px; margin-top: -30px; font-family: 'Luckiest Guy', cursive; color: #fff;"> About My Resume </p>
+        <!-- Main heading -->
+
+      </div>
+      
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+  
+          <ol class="timeline">
+            <li class="timeline-element">
+              <h5 class="font-weight-bold green-text mb-3">Currently Work</h5>
+              <h5 class="font-weight-bold white-text mb-3">PT. Jasutama Karya Mandiri</h5>
+              <p class="grey-text font-small"><time datetime="08-11-2018">08 Nov 2018 - Present</time>- As HRD and Operational</p>
+              <p class="text-muted" style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ullam adipisci reiciendis porro natus laudantium similique. 
+                Explicabo amet ipsum fugiat aliquam alias.</p>
+            </li>
+  
+            <li class="timeline-element">
+              <h5 class="font-weight-bold white-text mb-3">PT. Nusantara Airparts</h5>
+              <p class="grey-text font-small"><time datetime="02-2-2018">02 Feb 2017 - 30 Sept 2018</time>- As Human Resoruces Generalist</p>
+              <p class="text-muted" style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ullam adipisci reiciendis porro natus laudantium similique. 
+                Explicabo amet ipsum fugiat aliquam alias.</p>
+            </li>
+  
+            <li class="timeline-element">
+              <h5 class="font-weight-bold white-text mb-3">PT. Rancang Semesta Nusantara</h5>
+              <p class="grey-text font-small"><time datetime="11-2-2012">11 Feb 2012 - 14 Feb 2017</time>- As Project Adminstrator</p>
+              <p class="text-muted" style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ullam adipisci reiciendis porro natus laudantium similique. 
+                Explicabo amet ipsum fugiat aliquam alias.</p>
+            </li>
+
+          </ol>
+  
+        </div>
+      </div>
+      
+    </section>
+    <!-- Section -->
+    
+  </div>
+
+{% endblock content %}
