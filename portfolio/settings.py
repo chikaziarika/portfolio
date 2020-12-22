@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 import os
 import boto3
-import django_heroku
 from boto.s3.connection import S3Connection, Key
 from pathlib import Path
 from dotenv import load_dotenv
@@ -188,5 +187,3 @@ AWS_S3_REGION_NAME = 'ap-southeast-1'
 
 AWS_S3_FILE_OVERWRITE = False
 AWS_DEFAULT_ACL = None
-
-django_heroku.settings(locals())
